@@ -1,3 +1,5 @@
+![One XML sitemap for all your uploaded PDFs](https://repository-images.githubusercontent.com/575400437/66a1764f-ab7d-4b73-b002-841293f1bfa2)
+
 # XML Sitemap for PDFs for Yoast SEO
 
 This plugin adds an XML sitemap for PDFs. It adds this XML sitemap to the `sitemap_index.xml` that Yoast SEO generates.
