@@ -2,7 +2,7 @@
 
 # XML Sitemap for PDFs for Yoast SEO
 
-This plugin adds an XML sitemap for PDFs. It adds this XML sitemap to the `sitemap_index.xml` that Yoast SEO generates.
+This WordPress plugin adds an XML sitemap for PDFs. It adds this XML sitemap to the `sitemap_index.xml` that [Yoast SEO](https://yoast.com/wordpress/plugins/seo/) generates.
 It has no settings.
 
 ## Installation
