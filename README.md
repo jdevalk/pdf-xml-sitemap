@@ -26,6 +26,16 @@ that cache is cleared automatically.
 
 This plugin has **not** been tested on multisite.
 
+### Does this plugin have filters?
+
+Yes, it does. It has the following filters:
+
+| Filter                         | Description                                                                                                                                                                           |
+|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `joost/pdf-sitemap/filetypes`  | Allows filtering which filetypes we're adding to the XML sitemap. Just `pdf` by default.                                                                                              |
+| `joost/pdf-sitemap/cache-time` | Allows filtering how long the plugin caches the scanned PDFs for. Value needs to be in seconds. Defaults to one day. Note: setting to 0 will mean cache indefinitely, not disable it. |
+| `joost/pdf-sitemap/pdfs`       | Allows filtering the PDFs being output.                                                                                                                                               |
+
 ## Changelog
 
 ### 1.0

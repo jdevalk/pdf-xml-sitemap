@@ -35,7 +35,7 @@ class Joost_PDF_Sitemap {
 	 * Class constructor.
 	 */
 	public function __construct() {
-		$this->filetypes = apply_filters( 'yoast_pdf_sitemap', $this->filetypes );
+		$this->filetypes = apply_filters( 'joost/pdf-sitemap/filetypes', $this->filetypes );
 
 		add_action( 'init', [ $this, 'register_hooks' ] );
 	}
@@ -146,7 +146,7 @@ class Joost_PDF_Sitemap {
 					'pdfs'     => $this->pdfs,
 					'last_mod' => $this->last_mod,
 				],
-				DAY_IN_SECONDS
+				apply_filters( 'joost/pdf-sitemap/cache-time', DAY_IN_SECONDS )
 			);
 		}
 		$this->output .= $this->generate_output();
@@ -218,6 +218,8 @@ class Joost_PDF_Sitemap {
 	 */
 	private function generate_output(): string {
 		usort( $this->pdfs, fn( $a, $b ) => $b['mod'] <=> $a['mod'] );
+
+		$this->pdfs = apply_filters( 'joost/pdf-sitemap/pdfs', $this->pdfs );
 
 		// Make sure the XMLNS below matches the one in the XSL or you'll find yourself debugging for a long time.
 		$output = '<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">' . PHP_EOL;
