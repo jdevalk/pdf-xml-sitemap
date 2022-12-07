@@ -7,10 +7,9 @@ Version: 1.0
 Requires PHP: 7.4
 Author: Joost de Valk
 Author URI: https://joost.blog/
-License:
-License URI:
+License: GPLv3
+License URI: http://www.opensource.org/licenses/GPL-3.0
 */
-
 class Joost_PDF_Sitemap {
 	/**
 	 * Holds the output.
