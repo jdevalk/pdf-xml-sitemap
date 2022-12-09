@@ -1,7 +1,10 @@
 # Directories
 /.wordpress-org export-ignore
 /.github export-ignore
+/.cache export-ignore
 
 # Files
 /.gitattributes export-ignore
 /.gitignore export-ignore
+/.phpcs.xml.dist export-ignore
+/readme.md export-ignore

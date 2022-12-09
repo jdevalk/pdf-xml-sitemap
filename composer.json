@@ -1,0 +1,61 @@
+{
+  "name": "jdevalk/pdf-xml-sitemap",
+  "description": "Creates an XML sitemap for PDFs, requires Yoast SEO.",
+  "keywords": [
+    "xml-sitemaps",
+    "seo",
+    "pdf"
+  ],
+  "homepage": "https://joost.blog/plugins/pdf-sitemap/",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "Joost de Valk",
+      "email": "joost@joost.blog",
+      "homepage": "https://joost.blog"
+    }
+  ],
+  "type": "wordpress-plugin",
+  "support": {
+    "issues": "https://github.com/jdevalk/pdf-xml-sitemap/issues",
+    "forum": "https://wordpress.org/support/plugin/pdf-sitemap",
+    "source": "https://github.com/jdevalk/pdf-xml-sitemap"
+  },
+  "require": {
+    "php": ">=7.4",
+    "composer/installers": "^1.12.0"
+  },
+  "require-dev": {
+    "yoast/yoastcs": "^2.2.1",
+    "yoast/wp-test-utils": "^1.1.1"
+  },
+  "config": {
+    "platform": {
+      "php": "7.4"
+    },
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "composer/installers": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "scripts": {
+    "lint": [
+      "@php ./vendor/php-parallel-lint/php-parallel-lint/parallel-lint . -e php --show-deprecated --exclude vendor --exclude node_modules --exclude .git"
+    ],
+    "config-yoastcs" : [
+      "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run",
+      "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --config-set default_standard Yoast"
+    ],
+    "check-cs": [
+      "@php ./vendor/squizlabs/php_codesniffer/bin/phpcs --runtime-set testVersion 7.4-"
+    ],
+    "fix-cs": [
+      "@php ./vendor/squizlabs/php_codesniffer/bin/phpcbf"
+    ],
+    "test": [
+      "@php ./vendor/phpunit/phpunit/phpunit"
+    ]
+  }
+}

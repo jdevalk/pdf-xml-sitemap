@@ -30,13 +30,20 @@ This plugin has **not** been tested on multisite.
 
 Yes, it does. It has the following filters:
 
-| Filter                          | Description                                                                                                                                                                           |
-|:--------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `joost/pdf-sitemap/filetypes`   | Allows filtering which filetypes we're adding to the XML sitemap. Just `pdf` by default.                                                                                              |
-| `joost/pdf-sitemap/cache-time`  | Allows filtering how long the plugin caches the scanned PDFs for. Value needs to be in seconds. Defaults to one day. Note: setting to 0 will mean cache indefinitely, not disable it. |
-| `joost/pdf-sitemap/pdfs`        | Allows filtering the PDFs being output.                                                                                                                                               |
+| Filter                                | Description                                                                                                                                                                           |
+|:--------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `JoostBlog\WP\pdf-sitemap\filetypes`  | Allows filtering which filetypes we're adding to the XML sitemap. Just `pdf` by default.                                                                                              |
+| `JoostBlog\WP\pdf-sitemap\cache_time` | Allows filtering how long the plugin caches the scanned PDFs for. Value needs to be in seconds. Defaults to one day. Note: setting to 0 will mean cache indefinitely, not disable it. |
+| `JoostBlog\WP\pdf-sitemap\pdfs`       | Allows filtering the PDFs being output.                                                                                                                                               |
 
 ## Changelog
 
+### 1.0.1
+
+* Fixed a potential notice for an unset variable.
+* Renamed some filters for consistency.
+
+
 ### 1.0
+
 * First version.

@@ -2,6 +2,8 @@
 /.git
 /.github
 /node_modules
+/.cache
 
+.phpcs.xml.dist
 .distignore
 .gitignore
