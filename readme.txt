@@ -4,7 +4,7 @@ Tags: xml-sitemaps, seo, pdfs
 Requires at least: 6.0
 Tested up to: 6.1
 Requires PHP: 7.4
-Stable Tag: 1.0
+Stable Tag: 1.0.1
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -42,7 +42,13 @@ On this plugin's [GitHub repository](https://github.com/jdevalk/pdf-xml-sitemap)
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Fixed a potential notice for an unset variable.
+* Renamed some filters for consistency.
+
 = 1.0 =
+
 * First version.
 
 == Screenshots ==
