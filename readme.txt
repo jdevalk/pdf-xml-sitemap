@@ -15,6 +15,10 @@ This plugin creates an XML sitemap for the PDFs in your uploads folder. It requi
 This plugin adds an XML sitemap for PDFs. It adds this XML sitemap to the `sitemap_index.xml` that Yoast SEO generates.
 It has no settings.
 
+=== Have you found an issue? ===
+
+If you have bugs to report, please go to [the plugin's GitHub repository](https://github.com/jdevalk/pdf-xml-sitemap). For security issues, please use our [vulnerability disclosure program](https://patchstack.com/database/vdp/pdf-sitemap), which is managed by PatchStack. They will assist you with verification, CVE assignment, and, of course, notify us.
+
 == Installation ==
 
 1. Upload the files to the `/wp-content/plugins/pdf-sitemap/` directory or install through WordPress directly.
