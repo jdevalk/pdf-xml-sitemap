@@ -64,12 +64,16 @@ class JoostBlog_PDF_Sitemap {
 	 *
 	 * @param array $metadata      Attachment metadata. Unused.
 	 * @param int   $attachment_id The attachment that was created.
+	 *
+	 * @return array The attachment metadata.
 	 */
-	public function maybe_clear_cache( $metadata, $attachment_id ): void {
+	public function maybe_clear_cache( $metadata, $attachment_id ): array {
 		$mime_type = get_post_mime_type( $attachment_id );
 		if ( stripos( $mime_type, 'pdf' ) !== false ) {
 			delete_transient( self::TRANSIENT );
 		}
+
+		return $metadata;
 	}
 
 	/**
