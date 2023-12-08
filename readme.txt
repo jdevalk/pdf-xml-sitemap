@@ -4,7 +4,7 @@ Tags: xml-sitemaps, seo, pdfs
 Requires at least: 6.0
 Tested up to: 6.1
 Requires PHP: 7.4
-Stable Tag: 1.0.1
+Stable Tag: 1.1
 License: GPLv3
 License URI: http://www.opensource.org/licenses/GPL-3.0
 
@@ -45,6 +45,11 @@ This plugin has **not** been tested on multisite.
 On this plugin's [GitHub repository](https://github.com/jdevalk/pdf-xml-sitemap).
 
 == Changelog ==
+
+= 1.1 =
+
+* Fix a bug ([#1](https://github.com/jdevalk/pdf-xml-sitemap/issues/1))that would cause the cache not to be used.
+* Fix a bug ([#2](https://github.com/jdevalk/pdf-xml-sitemap/issues/2)) that would cause image dimensions to be missing.
 
 = 1.0.1 =
 
