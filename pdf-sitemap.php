@@ -135,6 +135,7 @@ class JoostBlog_PDF_Sitemap {
 	public function retrieve_from_cache_or_build(): void {
 		$transient = get_transient( self::TRANSIENT );
 		if ( $transient ) {
+			$this->pdfs   = $transient['pdfs'];
 			$this->output = '<!-- Served from cache -->' . PHP_EOL;
 		}
 		if ( empty( $this->pdfs ) ) {
